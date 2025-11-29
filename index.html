@@ -28,6 +28,8 @@
             },
             animation: {
               'blob': 'blob 10s infinite',
+              'shine': 'shine 1.5s ease-in-out infinite',
+              'gradient-x': 'gradient-x 3s ease infinite',
             },
             keyframes: {
               blob: {
@@ -35,7 +37,20 @@
                 '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
                 '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
                 '100%': { transform: 'translate(0px, 0px) scale(1)' },
-              }
+              },
+              shine: {
+                '100%': { left: '125%' },
+              },
+              'gradient-x': {
+                '0%, 100%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'left center'
+                },
+                '50%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'right center'
+                },
+              },
             }
           }
         }
@@ -43,8 +58,8 @@
     </script>
     <style>
       body {
-        background-color: #fafaf9; /* stone-50 */
-        color: #1c1917; /* stone-900 */
+        background-color: #fcfaf9; /* Warm white/stone */
+        color: #1c1917; /* Dark stone */
       }
       /* Custom Scrollbar */
       ::-webkit-scrollbar {
@@ -63,6 +78,7 @@
     </style>
     
     <!-- Import Map for external dependencies -->
+    <!-- This is crucial for GitHub Pages to resolve imports correctly -->
     <script type="importmap">
 {
   "imports": {
@@ -79,8 +95,10 @@
 </head>
   <body>
     <div id="root"></div>
-    <!-- Entry point -->
-    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+    
+    <!-- Main Application Logic -->
+    <!-- We use a single file index.tsx to avoid module resolution errors on static hosts -->
+    <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
