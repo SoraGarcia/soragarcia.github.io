@@ -1,4 +1,4 @@
-import { Project, Article, SocialLink, NavItem } from './types';
+import { Project, Article, SocialLink, NavItem } from './types.ts';
 
 export const PROFILE = {
   name: "Alex Chen",

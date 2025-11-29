@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Articles from './components/Articles';
-import Contact from './components/Contact';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import About from './components/About.tsx';
+import Projects from './components/Projects.tsx';
+import Articles from './components/Articles.tsx';
+import Contact from './components/Contact.tsx';
 
 const App: React.FC = () => {
   return (

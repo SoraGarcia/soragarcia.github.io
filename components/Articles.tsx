@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ARTICLES } from '../constants';
+import { ARTICLES } from '../constants.ts';
 
 const Articles: React.FC = () => {
   return (

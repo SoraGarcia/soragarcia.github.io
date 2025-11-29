@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
-import { PROJECTS } from '../constants';
+import { PROJECTS } from '../constants.ts';
 
 const Projects: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Twitter, Linkedin, Instagram, ArrowRight } from 'lucide-react';
-import { PROFILE, SOCIALS } from '../constants';
+import { PROFILE, SOCIALS } from '../constants.ts';
 
 const Contact: React.FC = () => {
   const getIcon = (name: string) => {

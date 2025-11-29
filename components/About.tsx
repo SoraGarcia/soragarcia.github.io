@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PROFILE } from '../constants';
+import { PROFILE } from '../constants.ts';
 
 const About: React.FC = () => {
   return (

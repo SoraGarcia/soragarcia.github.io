@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
-import { PROFILE } from '../constants';
+import { PROFILE } from '../constants.ts';
 
 const Hero: React.FC = () => {
   return (

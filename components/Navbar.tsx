@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { NAV_ITEMS, PROFILE } from '../constants';
+import { NAV_ITEMS, PROFILE } from '../constants.ts';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
